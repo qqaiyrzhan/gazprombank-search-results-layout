@@ -11,8 +11,13 @@ Responsive search results page layout for Gazprombank created during the Skillbo
 ## Features
 - Responsive layout
 
-Live Demo:
-https://qqaiyrzhan.github.io/gazprombank-search-results-layout/
+## Demo
+
+- Search Results:
+  https://qqaiyrzhan.github.io/gazprombank-search-results-layout/
+
+- Empty Search Results:
+  https://qqaiyrzhan.github.io/gazprombank-search-results-layout/search-results-empty.html
 
 ## Author
 qqaiyrzhan
