@@ -1,0 +1,27 @@
+.search-btn{
+    width: 110px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(71, 107, 240, 1);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    display: none;
+
+    &:hover{
+        background: rgba(51, 86, 215, 1);
+    }
+    &:focus-visible{
+        background: rgba(51, 86, 215, 1);
+        outline: none;
+    }
+
+    @include vp-1024{
+        display: flex;
+    }
+}

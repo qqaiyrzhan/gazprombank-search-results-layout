@@ -1,0 +1,18 @@
+.row-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 0 0 60px;
+
+    @include vp-768{
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+        margin: 0 0 80px;
+    }
+
+    @include vp-1024{
+        gap: 60px;
+    }
+}

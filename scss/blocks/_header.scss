@@ -1,0 +1,256 @@
+.header {
+  position: fixed;
+  // z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 15px 0 0;
+  background-color: $color-white;
+
+  @include vp-768 {
+    padding: 20px 0 0;
+    // border-bottom: 1px solid rgba(219, 223, 236, 1);
+  }
+
+  @include vp-1024 {
+    padding: 18px 0 0;
+    background-color: $color-solitude-2;
+    border-bottom: unset;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 0 15px;
+
+    @include vp-768{
+      padding: 0 0 20px;
+    }
+
+    @include vp-1024{
+      padding: 0 0 18px;
+    }
+  }
+
+  &__icon-decor {
+    display: none;
+    width: 24px;
+    height: 24px;
+    margin: 0 24px 0 0;
+
+    @include vp-1024 {
+      display: block;
+    }
+  }
+
+  &__logo-link {
+    display: flex;
+    margin: 0 auto 0 0;
+    color: $color-royal-blue-1;
+
+    @include vp-768 {
+      margin: 0 40px 0 0;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-free-speech-blue;
+      outline: none;
+    }
+  }
+
+  &__logo-image {
+    @include vp-1024 {
+      width: 170px;
+      height: 36px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &:first-of-type {
+      margin: 0 auto 0 0;
+    }
+
+    &:last-of-type {
+      @include vp-1024 {
+        margin: 0 8px 0 0;
+      }
+    }
+  }
+
+  &__link {
+    display: none;
+    padding: 0;
+    margin: 0 20px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      color: $color-royal-blue-1;
+    }
+
+    @include vp-1024 {
+      display: flex;
+    }
+
+    &--light {
+      color: $color-storm-grey-1;
+
+      &:last-child {
+        margin: 0 auto 0 0;
+      }
+
+      &:hover,
+      &:focus-visible,
+      &:active {
+        color: $color-black-russian;
+      }
+
+      @include vp-1024 {
+        display: none;
+      }
+
+      @include vp-1304 {
+        display: flex;
+      }
+    }
+
+    &--active {
+      color: $color-royal-blue-1;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-royal-blue-2;
+      }
+    }
+  }
+
+  &__search {
+    margin: 0 20px 0 0;
+
+    @include vp-1024 {
+      margin: 0 28px 0 0;
+    }
+  }
+
+  .header__login {
+    display: none;
+
+    @include vp-1024 {
+      display: flex;
+      margin: 0 16px 0 0;
+    }
+  }
+
+  &--open{
+    overflow: hidden;
+    border-radius: 0 0 24px 24px;
+
+    & + .main::after{
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(30, 34, 46, 0.5);
+    }
+
+    // &::after{
+    //   content: "";
+    //   position: fixed;
+    //   inset: 0;
+    //   background: rgba(30, 34, 46, 0.5);
+    //   z-index: -1;
+    // }
+
+    .breadcrumbs{
+        display: none;
+    }
+
+    .search-block{
+      padding: 25px 0 0;
+      display: none;
+
+      @include vp-768{
+        padding: 40px 0 0;
+        border-top: 1px solid rgba(219, 223, 236, 1);
+      }
+
+      @include vp-1024{
+        border-top: unset;
+      }
+
+      @include vp-1304{
+        padding: 60px 0 0;
+      }
+
+      &--open{
+        display: block;
+        padding: 25px 15px 0;
+
+        @include vp-768{
+          padding: 40px 20px 0;
+        }
+
+        @include vp-1024{
+          padding: 40px 40px 0;
+        }
+
+        @include vp-1304{
+          padding: 60px 156px 0;
+        }
+
+        @media (min-width: 1556px) {
+          padding-left: calc((100vw - 1244px) / 2);
+          padding-right: calc((100vw - 1244px) / 2);
+        }
+      }
+    }
+
+    .search-block__title{
+        display: none;
+    }
+
+    .search-form{
+      margin: 0 0 20px;
+
+      @include vp-1024{
+        padding: 0;
+      }
+    }
+
+    .variants{
+      display: flex;
+
+      @include vp-768{
+        margin: 0 0 40px;
+      }
+
+      @include vp-1024{
+        margin: 0;
+        padding: 0 0 40px;
+      }
+
+      @include vp-1304{
+        padding: 0 0 60px;
+      }
+
+      &-text{
+
+        @include vp-768{
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_header";
+@import "blocks/_main";
+@import "blocks/_footer";
+@import "blocks/_breadcrumbs";
+@import "blocks/_search-block";
+@import "blocks/_search-input-wrapper";
+@import "blocks/_search-input";
+@import "blocks/_find-btn";
+@import "blocks/_search-form";
+@import "blocks/_search-btn";
+@import "blocks/_variants";
+@import "blocks/_result";
+@import "blocks/_yandex";
+@import "blocks/_not-result";
+@import "blocks/_cookie";
+@import "blocks/_thumb-up";
+@import "blocks/_btn";
+@import "blocks/_socials";
+@import "blocks/_pagination";
+@import "blocks/_row-content";

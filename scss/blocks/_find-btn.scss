@@ -1,0 +1,36 @@
+.find-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    @include vp-768{
+        gap: 16px;
+        right: 20px;
+    }
+
+    &__button{
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+
+        &:focus-visible,
+        &:hover {
+            outline: none;
+        }
+    }
+
+    &__icon{
+
+        &:hover{
+            color: rgba(71, 107, 240, 1);
+        }
+        &:focus-visible{
+            color: rgba(71, 107, 240, 1);
+        }
+    }
+}

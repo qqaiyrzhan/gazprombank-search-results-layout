@@ -1,0 +1,44 @@
+.not-result{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    // margin: 0 0 60px;
+
+    @include vp-768{
+        align-items: unset;
+    }
+    
+    &__title{
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(30, 34, 46, 1);
+
+        @include vp-768{
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        @include vp-1024{
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__text{
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(30, 34, 46, 1);
+
+        @include vp-1024{
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}

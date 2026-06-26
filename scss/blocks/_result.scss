@@ -1,0 +1,134 @@
+.result{
+    padding: 0 0 60px;
+
+    @include vp-768{
+        padding: 0 0 80px;
+    }
+
+    @include vp-1024{
+        padding: 0 0 100px;
+    }
+
+    &-list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        gap: 40px;
+        margin: 0 0 62px;
+
+        @include vp-768{
+            margin: 0 0 40px;
+        }
+
+        @include vp-1024{
+            padding: 0 70px 0;
+            margin: 0 0 60px;
+            gap: 60px;
+        }
+
+        @include vp-1304{
+            padding: 0 210px 0;
+        }
+    }
+
+    &-link{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &:focus-visible{
+            outline: none;
+        }
+
+        &:hover &__title{
+            color: rgba(71, 107, 240, 1);
+        }
+        &:focus-visible &__title{
+            color: rgba(71, 107, 240, 1);
+        }
+
+
+        &__title{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: rgba(30, 34, 46, 1);
+            padding: 0;
+            margin: 0;
+
+            @include vp-1024{
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+        &__description{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(30, 34, 46, 1);
+            padding: 0;
+            margin: 0;
+
+            @include vp-1024{
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &--empty{
+        position: relative;
+        padding: 0 0 60px;
+
+        @include vp-768{
+            padding: 0 0 80px;
+        }
+
+        @include vp-1024{
+            padding: 0 0 100px;
+        }
+
+        .result__title{
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 32px;
+            color: rgba(30, 34, 46, 1);
+            padding: 0 0 56px;
+            margin: 0;
+
+            @include vp-768{
+                font-size: 32px;
+                line-height: 36px;
+                padding: 0 0 64px;
+            }
+
+            @include vp-1024{
+                font-size: 40px;
+                line-height: 44px;
+                padding: 0 0 120px;
+            }
+
+            &::after{
+                position: absolute;
+                left: 0;
+                top: 60px;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: rgba(219, 223, 236, 1);
+
+                @include vp-768{
+                    top: 68px;
+                }
+
+                @include vp-1024{
+                    top: 84px;
+                }
+            }
+        }
+    }
+}

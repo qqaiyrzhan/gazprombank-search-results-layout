@@ -1,0 +1,23 @@
+.search-input{
+    width: 100%;
+    padding: 17px 92px 17px 16px;
+    border: 1px solid rgba(204, 207, 222, 1);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+
+    &:hover{
+        border-color: rgba(127, 132, 153, 1);
+    }
+    &:focus-visible{
+        border-color: rgba(71, 107, 240, 1);
+        outline: none;
+    }
+
+    @include vp-768{
+        padding: 19px 104px 19px 20px;
+    }
+}

@@ -1,0 +1,31 @@
+.thumb-up{
+    z-index: 100;
+    position: fixed;
+    right: 15px;
+    top: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(30, 34, 46, 1);
+    border-radius: 50%;
+
+    @include vp-768{
+        right: 20px;
+        top: 508px;
+    }
+
+    @include vp-1024{
+        right: 20px;
+        top: 646px;
+    }
+
+
+    &:hover{
+        background: rgba(56, 63, 82, 1);
+    }
+    &:focus-visible{
+        background: rgba(56, 63, 82, 1);
+    }
+}
