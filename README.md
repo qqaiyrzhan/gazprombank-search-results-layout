@@ -10,6 +10,10 @@ Responsive search results page layout for Gazprombank created during the Skillbo
 
 ## Features
 - Responsive layout
+- Semantic HTML
+- BEM methodology
+- SCSS
+- Cross-browser compatibility
 
 ## Demo
 
